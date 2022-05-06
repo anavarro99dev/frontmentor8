@@ -149,15 +149,15 @@ footer a:hover {
 }
 
 body {
-  background-image: url(/images/bg-desktop.svg);
   background-color: #674baf;
+  background-image: url(/images/bg-desktop.svg);
   color: white;
-  text-align: center;
   font-family: "Poppins", sans-serif;
 }
 
 @media screen and (max-width: 46.875rem) {
   body {
+    text-align: center;
     background-image: url(/images/bg-mobile.svg);
   }
 }
@@ -189,6 +189,13 @@ main button.w3-section {
   position: relative;
   -webkit-box-shadow: 0.3125rem 0.3125rem;
           box-shadow: 0.3125rem 0.3125rem;
+}
+
+@media screen and (max-width: 46.875rem) {
+  main button.w3-section {
+    width: 60%;
+    left: 20%;
+  }
 }
 
 main p {
