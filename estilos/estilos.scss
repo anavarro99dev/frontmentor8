@@ -1,6 +1,5 @@
 @import "reset";
 @import "util";
-@import "footer";
 @import "w3.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
@@ -43,16 +42,15 @@ section.icon {
     font-size: 1rem;
   }
   @include movil {
-    position: relative;
+    position: relative !important;
   }
   a:hover {
     color: $Soft_Magenta !important;
     border-color: $Soft_Magenta !important;
     background-color: inherit !important;
   }
-  a{
+  a {
     padding: rem(6px) rem(10px);
-    // margin: 0;
   }
 }
 
@@ -84,7 +82,7 @@ main {
       width: 30%;
       height: rem(60px);
     }
-    &:hover{
+    &:hover {
       color: white !important;
       background-color: $Soft_Magenta !important;
     }
@@ -97,5 +95,24 @@ main {
     @include desktop {
       padding: 3% !important;
     }
+  }
+}
+
+footer {
+  text-align: center;
+  color: darkgreen;
+  a {
+    color: darkgrey;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+      color: black;
+      font-weight: normal;
+      text-decoration: none;
+    }
+  }
+  @include movil {
+    position: relative !important;
   }
 }

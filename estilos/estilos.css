@@ -131,30 +131,6 @@ select {
   }
 }
 
-footer {
-  text-align: center;
-  color: darkgreen;
-}
-
-@media screen and (max-width: 46.875rem) {
-  footer {
-    position: relative;
-  }
-}
-
-footer a {
-  color: darkgrey;
-  font-style: normal;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-footer a:hover {
-  color: black;
-  font-weight: normal;
-  text-decoration: none;
-}
-
 body {
   background-color: #674baf;
   background-image: url(/images/bg-desktop.svg);
@@ -197,7 +173,7 @@ section.icon ion-icon {
 
 @media screen and (max-width: 46.875rem) {
   section.icon {
-    position: relative;
+    position: relative !important;
   }
 }
 
@@ -262,6 +238,30 @@ main p {
 @media screen and (min-width: 46.875rem) {
   main section {
     padding: 3% !important;
+  }
+}
+
+footer {
+  text-align: center;
+  color: darkgreen;
+}
+
+footer a {
+  color: darkgrey;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 46.875rem) {
+  footer {
+    position: relative !important;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
