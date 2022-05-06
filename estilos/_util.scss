@@ -4,6 +4,12 @@
   }
 }
 
+@mixin desktop {
+  @media screen and (min-width: rem(750px)){
+    @content;
+  }
+}
+
 @function rem($size) {
   @return $size * 1rem/16px;
 }

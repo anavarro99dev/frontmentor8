@@ -1,4 +1,5 @@
 /* Box sizing rules */
+@import url(c:\Users\Administrador\Mob Administrator\Projects\Programation Projects\Projects\Web\frontendmentor.io\frontmentor8\estilos\w3.css);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 *,
 *::before,
@@ -135,6 +136,12 @@ footer {
   color: darkgreen;
 }
 
+@media screen and (max-width: 46.875rem) {
+  footer {
+    position: relative;
+  }
+}
+
 footer a {
   color: darkgrey;
   font-style: normal;
@@ -152,7 +159,7 @@ body {
   background-color: #674baf;
   background-image: url(/images/bg-desktop.svg);
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 @media screen and (max-width: 46.875rem) {
@@ -167,28 +174,66 @@ body h2 {
   line-height: 1.75rem;
 }
 
+@media screen and (min-width: 46.875rem) {
+  body {
+    padding: 2.5%;
+  }
+  body p {
+    font-size: 1.25rem;
+  }
+  body h2 {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+}
+
 section.icon {
-  font-size: 1.5rem;
   color: white;
 }
 
 section.icon ion-icon {
-  padding: 0.25rem;
+  font-size: 1rem;
 }
 
-header {
-  font-size: 1.5rem;
+@media screen and (max-width: 46.875rem) {
+  section.icon {
+    position: relative;
+  }
 }
 
-header h2 {
-  font-size: 1.5rem;
+section.icon a:hover {
+  color: #e882e8 !important;
+  border-color: #e882e8 !important;
+  background-color: inherit !important;
+}
+
+section.icon a {
+  padding: 0.375rem 0.625rem;
+}
+
+@media screen and (max-width: 46.875rem) {
+  header {
+    font-size: 1.5rem;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 46.875rem) {
+  header {
+    font-size: 3rem;
+  }
+  header h2 {
+    font-size: 3rem;
+  }
 }
 
 main button.w3-section {
   color: #674baf !important;
   position: relative;
-  -webkit-box-shadow: 0.3125rem 0.3125rem;
-          box-shadow: 0.3125rem 0.3125rem;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.3125rem;
+          box-shadow: 0.3125rem 0.3125rem 0.3125rem;
 }
 
 @media screen and (max-width: 46.875rem) {
@@ -198,7 +243,25 @@ main button.w3-section {
   }
 }
 
+@media screen and (min-width: 46.875rem) {
+  main button.w3-section {
+    width: 30%;
+    height: 3.75rem;
+  }
+}
+
+main button.w3-section:hover {
+  color: white !important;
+  background-color: #e882e8 !important;
+}
+
 main p {
   font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (min-width: 46.875rem) {
+  main section {
+    padding: 3% !important;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
