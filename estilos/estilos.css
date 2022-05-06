@@ -206,6 +206,7 @@ section.icon a {
 }
 
 main button.w3-section {
+  font-size: 1.2rem;
   color: #674baf !important;
   position: relative;
   -webkit-box-shadow: 0.3125rem 0.3125rem 0.3125rem;
