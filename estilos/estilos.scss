@@ -1,0 +1,52 @@
+@import "reset";
+@import "util";
+@import "footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+$Violet: hsl(257, 40%, 49%);
+$Soft_Magenta: hsl(300, 69%, 71%);
+$TyBody: "Poppins", sans-serif;
+$TyHead: "Open Sans", sans-serif;
+$TyTNR: "Times New Roman", Times, serif;
+
+body {
+  background-image: url(/images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  @include movil {
+    background-image: url(/images/bg-mobile.svg);
+  }
+  color: white;
+  text-align: center;
+  font-family: $TyBody;
+  h2 {
+    font-weight: 600;
+    line-height: rem(28px);
+  }
+}
+
+section.icon {
+  font-size: 1.5rem;
+  color: white;
+  ion-icon {
+    padding: rem(4px);
+  }
+}
+
+header {
+  h2{
+    font-size: 1.5rem;
+  }
+  font-size: 1.5rem;
+}
+
+main {
+  button.w3-section {
+    color: $Violet !important;
+    position: relative;
+    box-shadow: rem(5px) rem(5px);
+  }
+  p {
+    font-family: $TyHead;
+  }
+}
